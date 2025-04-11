@@ -27,21 +27,21 @@ const videos = [
 
 const OurWorkInAction = () => {
   return (
-    <div className="wave-background py-16 px-4 lg:px-8">
+    <div className="wave-background py-20 px-4 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="section-title">
           <h2 className="text-gray-300">SEE OUR WORK</h2>
           <h3 className="text-white">IN ACTION</h3>
         </div>
         
-        <div className="mt-12 relative">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="mt-16 relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {videos.map((video, index) => (
-              <div key={index} className="venue-card">
+              <div key={index} className="venue-card rounded-xl overflow-hidden">
                 <img
                   src={video.thumbnail}
                   alt={video.title}
-                  className="venue-image h-56"
+                  className="venue-image h-64 w-full object-cover"
                 />
                 <button className="play-button">
                   <Play className="w-8 h-8 text-dark" fill="currentColor" />
@@ -50,7 +50,7 @@ const OurWorkInAction = () => {
             ))}
           </div>
           
-          <div className="flex justify-center mt-6 space-x-4">
+          <div className="flex justify-center mt-8 space-x-4">
             <button className="navigation-button">
               <ChevronLeft className="w-5 h-5" />
             </button>

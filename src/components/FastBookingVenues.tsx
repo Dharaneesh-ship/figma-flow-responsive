@@ -28,7 +28,7 @@ const venueTypes = [
 
 const FastBookingVenues = () => {
   return (
-    <div className="cream-background py-16 px-4 lg:px-8 relative">
+    <div className="cream-background py-20 px-4 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
         <Star className="star-decoration top-10 left-20 w-6 h-6" />
         <Star className="star-decoration bottom-20 right-10 w-5 h-5" />
@@ -38,7 +38,7 @@ const FastBookingVenues = () => {
           <h3>FAST BOOKING VENUES</h3>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-16">
           {venueTypes.map((venue, index) => (
             <div key={index} className="text-center">
               <Link to={venue.link} className="block">
@@ -49,7 +49,7 @@ const FastBookingVenues = () => {
                     className="w-full h-full object-cover transition-transform hover:scale-110 duration-500"
                   />
                 </div>
-                <h4 className="mt-4 font-medium">{venue.type}</h4>
+                <h4 className="mt-4 font-medium text-lg">{venue.type}</h4>
               </Link>
             </div>
           ))}

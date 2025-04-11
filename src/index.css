@@ -91,7 +91,7 @@
   }
   
   .featured-ribbon {
-    @apply bg-red-600 text-white px-3 py-8 absolute left-2 top-0 font-bold text-xs writing-vertical;
+    @apply bg-red-600 text-white px-3 py-8 absolute left-4 top-0 font-bold text-xs writing-vertical;
   }
   
   .writing-vertical {
@@ -113,31 +113,31 @@
   }
   
   .section-title h2 {
-    @apply text-2xl md:text-3xl font-serif font-medium text-gray-500;
+    @apply text-xl md:text-2xl font-serif font-medium text-gray-500 uppercase tracking-wider;
   }
   
   .section-title h3 {
-    @apply text-3xl md:text-5xl font-serif font-bold mt-1;
+    @apply text-3xl md:text-5xl font-serif font-bold mt-2 uppercase;
   }
   
   .navigation-button {
-    @apply w-10 h-10 flex items-center justify-center rounded-full bg-white/80 backdrop-blur-sm hover:bg-white transition-all;
+    @apply w-12 h-12 flex items-center justify-center rounded-full bg-white/80 backdrop-blur-sm hover:bg-white transition-all shadow-md;
   }
   
   .category-button {
-    @apply px-5 py-2 border border-gold text-white hover:bg-gold hover:text-dark transition-colors rounded-lg;
+    @apply px-6 py-3 border-2 border-gold text-white hover:bg-gold hover:text-dark transition-colors rounded-lg font-medium;
   }
   
   .action-button {
-    @apply px-6 py-3 bg-gold hover:bg-darkgold text-dark font-medium rounded-lg transition-colors;
+    @apply px-8 py-4 bg-gold hover:bg-darkgold text-dark font-medium rounded-lg transition-colors text-lg shadow-md;
   }
   
   .know-more-button {
-    @apply px-5 py-2 bg-gold hover:bg-darkgold text-dark font-medium rounded-lg transition-colors text-center;
+    @apply px-6 py-3 bg-gold hover:bg-darkgold text-dark font-medium rounded-lg transition-colors text-center shadow-md;
   }
   
   .venue-card {
-    @apply relative overflow-hidden rounded-2xl;
+    @apply relative overflow-hidden rounded-2xl shadow-md;
   }
   
   .venue-image {
@@ -145,11 +145,11 @@
   }
   
   .play-button {
-    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 flex items-center justify-center rounded-full bg-white/80 backdrop-blur-sm hover:bg-white transition-all;
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 flex items-center justify-center rounded-full bg-white/90 backdrop-blur-sm hover:bg-white transition-all shadow-lg;
   }
   
   .star-decoration {
-    @apply text-gold animate-pulse-slow absolute;
+    @apply text-gold animate-pulse-slow absolute opacity-80;
   }
   
   .wave-background {

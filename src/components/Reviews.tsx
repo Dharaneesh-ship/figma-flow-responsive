@@ -35,9 +35,9 @@ const reviews = [
 
 const Reviews = () => {
   return (
-    <div className="cream-background py-16 px-4 lg:px-8 relative">
+    <div className="cream-background py-20 px-4 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between mb-10">
+        <div className="flex flex-col md:flex-row items-center justify-between mb-12">
           <div className="flex items-center mb-4 md:mb-0">
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="w-8 h-8 mr-3" />
             <span className="text-xl font-medium">Rating</span>
@@ -55,18 +55,18 @@ const Reviews = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
           {reviews.map((review, index) => (
-            <div key={index} className="bg-white rounded-xl p-4 shadow-md">
-              <div className="flex items-center mb-3">
-                <img src={review.avatar} alt={review.name} className="w-10 h-10 rounded-full mr-3" />
+            <div key={index} className="bg-white rounded-xl p-6 shadow-lg">
+              <div className="flex items-center mb-4">
+                <img src={review.avatar} alt={review.name} className="w-12 h-12 rounded-full mr-3" />
                 <div>
-                  <h4 className="font-medium text-sm">{review.name}</h4>
+                  <h4 className="font-medium">{review.name}</h4>
                   <div className="flex items-center">
                     {Array(5).fill(0).map((_, i) => (
                       <Star 
                         key={i} 
-                        className={`w-3 h-3 ${i < review.rating ? 'text-gold fill-gold' : 'text-gray-300'}`}
+                        className={`w-4 h-4 ${i < review.rating ? 'text-gold fill-gold' : 'text-gray-300'}`}
                       />
                     ))}
                     <span className="text-xs text-gray-500 ml-2">{review.time}</span>
@@ -76,7 +76,7 @@ const Reviews = () => {
               
               <p className="text-sm text-gray-700 line-clamp-4">{review.text}</p>
               
-              <div className="mt-3 pt-3 border-t border-gray-100">
+              <div className="mt-4 pt-3 border-t border-gray-100">
                 <div className="flex items-center">
                   <span className="text-xs text-gray-500">Posted on</span>
                   <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" className="w-4 h-4 ml-2" />

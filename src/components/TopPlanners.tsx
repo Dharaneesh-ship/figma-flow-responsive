@@ -32,7 +32,7 @@ const planners = [
 
 const TopPlanners = () => {
   return (
-    <div className="cream-background py-16 px-4 lg:px-8 relative">
+    <div className="cream-background py-20 px-4 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
         <Star className="star-decoration top-10 left-10 w-6 h-6" />
         <Star className="star-decoration bottom-10 right-20 w-5 h-5" />
@@ -42,23 +42,23 @@ const TopPlanners = () => {
           <h3>PLANNERS</h3>
         </div>
         
-        <div className="mt-12 relative">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-x-auto pb-4">
+        <div className="mt-16 relative">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 overflow-x-auto pb-4">
             {planners.map((planner, index) => (
-              <div key={index} className="venue-card">
+              <div key={index} className="venue-card rounded-xl overflow-hidden">
                 <img
                   src={planner.image}
                   alt={planner.type}
-                  className="venue-image h-40"
+                  className="venue-image h-48 w-full object-cover transition-transform hover:scale-105 duration-500"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
-                  <h4 className="text-white text-center text-sm">{planner.type}</h4>
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+                  <h4 className="text-white text-center text-base">{planner.type}</h4>
                 </div>
               </div>
             ))}
           </div>
           
-          <div className="flex justify-center mt-6 space-x-4">
+          <div className="flex justify-center mt-8 space-x-4">
             <button className="navigation-button">
               <ChevronLeft className="w-5 h-5" />
             </button>

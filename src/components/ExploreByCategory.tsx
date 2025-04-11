@@ -27,24 +27,24 @@ const categories = [
 
 const ExploreByCategory = () => {
   return (
-    <div className="wave-background py-16 px-4 lg:px-8">
+    <div className="wave-background py-20 px-4 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="section-title">
           <h2 className="text-gray-300">EXPLORE BY</h2>
           <h3 className="text-white">CELEBRATION</h3>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           {categories.map((category, index) => (
             <Link key={index} to={category.link} className="block">
-              <div className="venue-card">
+              <div className="venue-card overflow-hidden rounded-xl">
                 <img
                   src={category.image}
                   alt={category.name}
-                  className="venue-image"
+                  className="venue-image h-72 w-full object-cover transition-transform hover:scale-105 duration-500"
                 />
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                  <h4 className="text-white text-center font-medium">{category.name}</h4>
+                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                  <h4 className="text-white text-center font-medium text-xl">{category.name}</h4>
                 </div>
               </div>
             </Link>

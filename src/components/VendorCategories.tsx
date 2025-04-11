@@ -31,7 +31,7 @@ const VendorCategories = () => {
   const [activeCategory, setActiveCategory] = React.useState("Venue");
   
   return (
-    <div className="wave-background py-16 px-4 lg:px-8 relative">
+    <div className="wave-background py-20 px-4 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
         <Star className="star-decoration top-10 left-20 w-6 h-6 text-gold" />
         <Star className="star-decoration bottom-20 right-40 w-7 h-7 text-gold" />
@@ -41,7 +41,7 @@ const VendorCategories = () => {
           <h3 className="text-white">CATEGORIES</h3>
         </div>
         
-        <div className="flex justify-center mt-8 space-x-4">
+        <div className="flex justify-center mt-12 space-x-4">
           {categories.map((category) => (
             <button
               key={category}
@@ -55,9 +55,9 @@ const VendorCategories = () => {
           ))}
         </div>
         
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {vendors.map((vendor, index) => (
-            <div key={index} className="card-container bg-dark">
+            <div key={index} className="card-container bg-dark rounded-xl overflow-hidden">
               <div className="relative">
                 <button className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/30 backdrop-blur-sm text-white hover:bg-black/50 transition-all">
                   <Heart className="w-5 h-5" />
@@ -65,10 +65,10 @@ const VendorCategories = () => {
                 <img
                   src={vendor.image}
                   alt={vendor.name}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-56 object-cover"
                 />
-                <div className="p-4">
-                  <h4 className="text-white text-lg font-medium mb-4">{vendor.name}</h4>
+                <div className="p-6">
+                  <h4 className="text-white text-xl font-medium mb-6">{vendor.name}</h4>
                   <button className="know-more-button w-full">KNOW MORE</button>
                 </div>
               </div>

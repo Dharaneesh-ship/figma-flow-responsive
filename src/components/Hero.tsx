@@ -5,7 +5,7 @@ import { Star } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <div className="relative cream-background pt-10 pb-20 px-4 lg:px-8 overflow-hidden">
+    <div className="relative cream-background pt-16 pb-24 px-4 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto relative">
         {/* Star decorations */}
         <Star className="star-decoration top-4 left-10 w-6 h-6" />
@@ -15,12 +15,12 @@ const Hero = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="text-center lg:text-left order-2 lg:order-1 mt-10 lg:mt-0">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight">
               Plan Your<br />
               Perfect Event<br />
               with LetsGala
             </h1>
-            <p className="mt-6 text-lg max-w-md mx-auto lg:mx-0">
+            <p className="mt-6 text-lg max-w-md mx-auto lg:mx-0 text-gray-700">
               Connecting you with the best venues, caterers, and entertainers
             </p>
             <div className="mt-8">
@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
           
           <div className="order-1 lg:order-2 relative">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-6">
               <div className="transform -translate-y-6">
                 <img 
                   src="/public/lovable-uploads/a17ba88f-5fe8-4d39-9746-482daee65998.png" 
@@ -42,7 +42,7 @@ const Hero = () => {
                   className="rounded-full w-full h-auto animate-float"
                 />
               </div>
-              <div className="transform translate-y-12">
+              <div className="transform translate-y-8">
                 <img 
                   src="/public/lovable-uploads/ecb22880-5740-4c43-8e1e-3bdcf598948c.png" 
                   alt="Wedding decoration" 
@@ -50,14 +50,14 @@ const Hero = () => {
                   style={{clipPath: "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)"}}
                 />
               </div>
-              <div className="transform translate-x-8">
+              <div className="transform translate-x-4">
                 <img 
                   src="/public/lovable-uploads/e93e382d-7f97-4dfa-8be2-a13661b7854e.png" 
                   alt="Table setting" 
                   className="rounded-tr-3xl rounded-bl-3xl w-full h-auto animate-float"
                 />
               </div>
-              <div className="transform -translate-x-8 translate-y-4">
+              <div className="transform -translate-x-4 translate-y-4">
                 <img 
                   src="/public/lovable-uploads/7e5e654a-27a5-4b5e-98ef-be13caa5597c.png" 
                   alt="Event decoration" 

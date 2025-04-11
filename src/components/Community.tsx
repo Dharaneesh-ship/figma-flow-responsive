@@ -13,7 +13,7 @@ const images = [
 
 const Community = () => {
   return (
-    <div className="cream-background py-16 px-4 lg:px-8 relative">
+    <div className="cream-background py-20 px-4 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
         <Star className="star-decoration top-10 left-10 w-5 h-5" />
         <Star className="star-decoration bottom-20 right-20 w-4 h-4" />
@@ -23,8 +23,8 @@ const Community = () => {
           <h3>BEAUTIFUL COMMUNITY</h3>
         </div>
         
-        <div className="mt-12">
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-1">
+        <div className="mt-16">
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
             {images.map((image, index) => (
               <div key={index} className="aspect-square overflow-hidden">
                 <img 
@@ -37,15 +37,15 @@ const Community = () => {
           </div>
         </div>
         
-        <div className="mt-12 bg-gold rounded-2xl py-8 px-6 md:py-10 md:px-12 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
-          <div className="relative z-10 mb-6 md:mb-0">
-            <h3 className="text-2xl md:text-3xl font-serif font-bold text-dark">
+        <div className="mt-16 bg-gold rounded-2xl py-10 px-8 md:py-12 md:px-16 flex flex-col md:flex-row items-center justify-between relative overflow-hidden">
+          <div className="relative z-10 mb-8 md:mb-0">
+            <h3 className="text-2xl md:text-3xl font-serif font-bold text-dark text-center md:text-left">
               Ready to plan your<br />
               unforgettable celebration?
             </h3>
           </div>
           
-          <button className="bg-white hover:bg-gray-100 text-dark font-medium px-6 py-3 rounded-lg transition-colors z-10">
+          <button className="bg-white hover:bg-gray-100 text-dark font-medium px-8 py-4 rounded-lg transition-colors z-10 text-lg">
             START PLANNING
           </button>
           
@@ -54,7 +54,7 @@ const Community = () => {
             <img 
               src="/public/lovable-uploads/44b8301a-d324-4fe9-9409-f891548f918d.png" 
               alt="Decoration" 
-              className="w-24 h-24 object-contain"
+              className="w-32 h-32 object-contain"
             />
           </div>
         </div>

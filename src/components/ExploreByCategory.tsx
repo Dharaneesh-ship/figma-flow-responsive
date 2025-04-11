@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Star } from 'lucide-react';
 
 const categories = [
   {
@@ -27,8 +28,11 @@ const categories = [
 
 const ExploreByCategory = () => {
   return (
-    <div className="wave-background py-20 px-4 lg:px-8">
+    <div className="wave-background py-20 px-4 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
+        <Star className="star-decoration top-10 left-20 w-6 h-6 text-gold" />
+        <Star className="star-decoration bottom-20 right-40 w-7 h-7 text-gold" />
+        
         <div className="section-title">
           <h2 className="text-gray-300">EXPLORE BY</h2>
           <h3 className="text-white">CELEBRATION</h3>
@@ -36,15 +40,19 @@ const ExploreByCategory = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           {categories.map((category, index) => (
-            <Link key={index} to={category.link} className="block">
-              <div className="venue-card overflow-hidden rounded-xl">
-                <img
-                  src={category.image}
-                  alt={category.name}
-                  className="venue-image h-72 w-full object-cover transition-transform hover:scale-105 duration-500"
-                />
-                <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                  <h4 className="text-white text-center font-medium text-xl">{category.name}</h4>
+            <Link key={index} to={category.link} className="block group">
+              <div className="venue-card overflow-hidden rounded-xl shadow-lg">
+                <div className="relative h-72 w-full overflow-hidden">
+                  <img
+                    src={category.image}
+                    alt={category.name}
+                    className="h-full w-full object-cover transition-transform group-hover:scale-110 duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end">
+                    <div className="p-6 w-full">
+                      <h4 className="text-white text-center font-medium text-xl">{category.name}</h4>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Link>

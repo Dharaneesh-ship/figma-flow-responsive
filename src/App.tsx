@@ -10,6 +10,8 @@ import BirthdaysPage from "./pages/categories/Birthdays";
 import WeddingsPage from "./pages/categories/Weddings";
 import BabyShowersPage from "./pages/categories/BabyShowers";
 import CorporateEventsPage from "./pages/categories/CorporateEvents";
+import VendorListPage from "./pages/vendors/VendorListPage";
+import VendorDetail from "./pages/vendors/VendorDetail";
 
 const queryClient = new QueryClient();
 
@@ -25,7 +27,8 @@ const App = () => (
           <Route path="/categories/weddings" element={<WeddingsPage />} />
           <Route path="/categories/baby-showers" element={<BabyShowersPage />} />
           <Route path="/categories/corporate-events" element={<CorporateEventsPage />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/vendors" element={<VendorListPage />} />
+          <Route path="/vendors/:vendorId" element={<VendorDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

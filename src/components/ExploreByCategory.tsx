@@ -28,21 +28,21 @@ const categories = [
 
 const ExploreByCategory = () => {
   return (
-    <div className="wave-background py-20 px-4 lg:px-8 relative">
+    <div className="wave-background py-24 px-4 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
-        <Star className="star-decoration top-10 left-20 w-6 h-6 text-gold" />
-        <Star className="star-decoration bottom-20 right-40 w-7 h-7 text-gold" />
+        <Star className="absolute top-20 left-[10%] w-6 h-6 text-gold opacity-70" />
+        <Star className="absolute bottom-20 right-[15%] w-7 h-7 text-gold opacity-70" />
         
-        <div className="section-title">
-          <h2 className="text-gray-300">EXPLORE BY</h2>
-          <h3 className="text-white">CELEBRATION</h3>
+        <div className="section-title text-center mb-16">
+          <h2 className="text-gray-300 text-lg font-medium tracking-wider uppercase">EXPLORE BY</h2>
+          <h3 className="text-white text-4xl font-serif font-bold mt-2">CELEBRATION</h3>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {categories.map((category, index) => (
             <Link key={index} to={category.link} className="block group">
               <div className="venue-card overflow-hidden rounded-xl shadow-lg">
-                <div className="relative h-72 w-full overflow-hidden">
+                <div className="relative h-80 w-full overflow-hidden">
                   <img
                     src={category.image}
                     alt={category.name}

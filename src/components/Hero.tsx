@@ -5,13 +5,13 @@ import { Star } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <div className="relative cream-background pt-20 pb-24 px-4 lg:px-8 overflow-hidden">
+    <div className="relative cream-background pt-24 pb-28 px-4 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto relative">
         {/* Star decorations */}
-        <Star className="star-decoration top-4 left-10 w-6 h-6" />
-        <Star className="star-decoration bottom-20 right-10 w-8 h-8" />
-        <Star className="star-decoration top-40 right-20 w-4 h-4" />
-        <Star className="star-decoration bottom-60 left-20 w-5 h-5" />
+        <Star className="absolute top-4 left-10 w-6 h-6 text-gold opacity-70" />
+        <Star className="absolute bottom-20 right-10 w-8 h-8 text-gold opacity-70" />
+        <Star className="absolute top-40 right-20 w-4 h-4 text-gold opacity-70" />
+        <Star className="absolute bottom-60 left-20 w-5 h-5 text-gold opacity-70" />
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left order-2 lg:order-1">
